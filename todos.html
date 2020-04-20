@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="PWA">
     <meta name="theme-color" content="#F8ECC2">
-    <title>Shared Notes</title>
+    <title>Remember IT</title>
     <link rel="apple-touch-icon" sizes="72x72" href="/imagens/icones/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/imagens/icones/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/imagens/icones/apple-icon-152x152.png">
@@ -19,20 +19,12 @@
 </head>
 
 <body>
-    <h1>Shared Notes</h1>
-    <form>
-        <textarea type="textarea" id="textoRecado"></textarea>
-        <div class="botoes">
-            <button type="submit">SALVAR</button>
-            <button>
-                <a href="/todos.html">VER TODOS</a>
-            </button>
-        </div>
-        <p>Aquela nome do filme, da música, aquele recado para compatilhar com todo mundo? Aqui é o seu lugar!</p>
-    </form>
+    <h1 class="col-12">TODOS RECADOS</h1>
+    <div class="row" id="iDrecados">
     </div>
-
-
+    <button>
+        <a href="/">Voltar</a>
+    </button>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
@@ -54,9 +46,9 @@
     </script>
     <script src="acoes/db.js"></script>
     <script src="acoes/acoes.js"></script>
-    <!-- <script src="acoes/acoesTodos.js"></script> -->
-    <script src="acoes/dbHome.js"></script>
-
+    <script src="acoes/acoesTodos.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </body>
 
 </html>
